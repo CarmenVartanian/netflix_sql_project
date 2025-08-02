@@ -41,10 +41,11 @@ CREATE TABLE netflix
 
 ### 1. Count the number of Movies vs TV Shows.
 ```sq;
-Select type, 
-	Count(*) as total_countent
-From netflix
-Group by type
+SELECT
+	type, 
+	COUNT(*) as total_countent
+FROM netflix
+GROUP BY type
 ```
 
 ### 2. Find the most common rating for movies and TV shows.
