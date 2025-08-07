@@ -102,7 +102,7 @@ select * from netflix
 select * from netflix
 	where director ILike '%Rajiv Chilaka%'
 ```
-### 8. List all TV shows wiht more than 5 seasons.
+### 8. List all TV shows with more than 5 seasons.
 ```sql
 select * from netflix
 	Where type= 'TV Show' AND split_part(duration,' ', 1) :: numeric > 5 
